@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Heart Disease Story{% endblock %}
+
+{% block content %}
+<div class="story-page">
+    <h1 class="page-title">The Story of Heart Disease</h1>
+    
+    <div class="story-grid">
+        <!-- Gender Suffering from Heart Disease -->
+        <div class="story-card">
+            <h2>Gender Suffering from Heart Disease</h2>
+            <div class="story-visualization">
+                <div class="gender-stats">
+                    <div class="gender-bar female-bar" style="width: 70%">
+                        <span>Female: 2,877</span>
+                    </div>
+                    <div class="gender-bar male-bar" style="width: 30%">
+                        <span>Male: 1,640</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Factors Story -->
+        <div class="story-card">
+            <h2>Key Risk Factors</h2>
+            <div class="risk-factors">
+                <div class="risk-item">
+                    <h3>Obesity</h3>
+                    <div class="risk-meter high"></div>
+                </div>
+                <div class="risk-item">
+                    <h3>Sedentary Lifestyle</h3>
+                    <div class="risk-meter high"></div>
+                </div>
+                <div class="risk-item">
+                    <h3>Smoking</h3>
+                    <div class="risk-meter high"></div>
+                </div>
+                <div class="risk-item">
+                    <h3>Diabetes</h3>
+                    <div class="risk-meter medium"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diabetes Affecting Heart Disease -->
+        <div class="story-card">
+            <h2>Diabetes Impact on Heart Disease</h2>
+            <div class="diabetes-impact">
+                <div class="impact-group">
+                    <h4>With Diabetes</h4>
+                    <div class="impact-bar" style="width: 45%">45%</div>
+                </div>
+                <div class="impact-group">
+                    <h4>Without Diabetes</h4>
+                    <div class="impact-bar" style="width: 55%">55%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Smoking and Alcohol Impact -->
+        <div class="story-card">
+            <h2>Impact of Smoking & Alcohol on Stroke</h2>
+            <div class="impact-chart">
+                <div class="impact-item">
+                    <span>Smokers</span>
+                    <div class="progress" style="width: 65%">65%</div>
+                </div>
+                <div class="impact-item">
+                    <span>Non-Smokers</span>
+                    <div class="progress" style="width: 35%">35%</div>
+                </div>
+                <div class="impact-item">
+                    <span>Alcohol Users</span>
+                    <div class="progress" style="width: 40%">40%</div>
+                </div>
+                <div class="impact-item">
+                    <span>Non-Alcohol Users</span>
+                    <div class="progress" style="width: 60%">60%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="story-legend">
+        <h3>Legend:</h3>
+        <div class="legend-items">
+            <span class="legend-item blue">Heart Disease</span>
+            <span class="legend-item orange">No Sex</span>
+            <span class="legend-item grey">Female</span>
+            <span class="legend-item dark-grey">Count: 2,377</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

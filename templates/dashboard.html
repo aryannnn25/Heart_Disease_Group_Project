@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard-page">
+    <h1 class="page-title">Heart Disease Analytics Dashboard</h1>
+    <p class="dashboard-intro">
+        Replace each Tableau `src` value below with the share link for your own published view.
+        Use this format: `https://public.tableau.com/views/WorkbookName/ViewName?:showVizHome=no`
+    </p>
+    
+    <div class="dashboard-grid">
+        <!-- Gender vs Heart Disease -->
+        <div class="dashboard-card">
+            <h2>Gender vs Heart Disease</h2>
+            <div class="chart-container">
+                <iframe
+                    class="tableau-frame"
+                    src="https://public.tableau.com/views/Dashboard_17727350957870/Dashboard5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no"
+                    title="Tableau Dashboard - Gender vs Heart Disease"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="chart-insights">
+                <p>Replace this sample view with your Tableau sheet for gender-based heart disease analysis.</p>
+            </div>
+        </div>
+
+        <!-- Diabetes vs Stroke -->
+        <div class="dashboard-card">
+            <h2>Diabetes vs Stroke Impact</h2>
+            <div class="chart-container">
+                <iframe
+                    class="tableau-frame"
+                    src="https://public.tableau.com/views/Dashboard_17727350957870/Dashboard5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no"
+                    title="Tableau Dashboard - Diabetes vs Stroke Impact"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Physical Activity Impact -->
+        <div class="dashboard-card">
+            <h2>Effect of Physical Activity</h2>
+            <div class="chart-container">
+                <iframe
+                    class="tableau-frame"
+                    src="https://public.tableau.com/views/Dashboard_17727350957870/Dashboard5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no"
+                    title="Tableau Dashboard - Effect of Physical Activity"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Age Distribution -->
+        <div class="dashboard-card">
+            <h2>Age Distribution</h2>
+            <div class="chart-container">
+                <iframe
+                    class="tableau-frame"
+                    src="https://public.tableau.com/views/Dashboard_17727350957870/Dashboard5?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no"
+                    title="Tableau Dashboard - Age Distribution"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-container">
+        <h1 class="hero-title">Understanding Heart Disease Through Data</h1>
+        
+        <div class="hero-content">
+            <p class="hero-text">
+                Heart disease is a group of diseases related to cardiovascular diseases, manifested by a violation 
+                of the normal functioning of the heart. May be caused by damage to the epicardium, pericardium, 
+                myocardium, endocardium, valvular apparatus of the heart, heart vessels.
+            </p>
+            
+            <p class="hero-text">
+                According to the <strong>National Heart, Lung and Blood Institute in Framingham (USA)</strong>, 
+                the most important factors in the development of cardiovascular disease in humans are 
+                <span class="highlight">obesity, sedentary lifestyle and smoking</span>.
+            </p>
+        </div>
+        
+        <div class="cta-section">
+            <a href="/dashboard" class="cta-button">Explore Dashboard →</a>
+        </div>
+    </div>
+</div>
+
+{% if section == 'about' %}
+<div class="about-section">
+    <h2>About This Project</h2>
+    <p>This project integrates Tableau dashboards with Flask to provide interactive insights into heart disease data...</p>
+</div>
+{% endif %}
+
+{% if section == 'contact' %}
+<div class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+{% endif %}
+{% endblock %}
